@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="fb.css">
+</head>
+<body>
+<nav>
+	<div class="nav-left">
+		<img src="logo.png" class="logo" height="50" width="40">
+		<ul>
+			<li><img src="notification.png" alt="" height="50" width="45"></li>
+			<li><img src="inbox.jpg" alt="" height="50" width="45"></li>
+			<li><img src="video.jpg" alt="" height="50" width="40"></li>
+       </ul>
+   </div>
+   <div class="nav-right">
+   <div class="seach-box">
+   	<img src="search.png" width="50"height="20">
+   	<input type="text" placeholder="search">
+   </div>
+   <div class="nav-user-icon: online">
+   	<img src="prince.jpg" width="45" height="50">
+   </div>
+   </div>
+</nav>
+<div class="container">
+	<div class="left-sidebar">
+		<div class="imp-links">
+			<a href="#"><img src="news.jpeg" height="50" width="45">Latest News</a>
+			<a href="#"><img src="friends.png"height="50" width="45">Friends</a>
+			<a href="#"><img src="groups.png"height="50" width="45">Groups</a>
+			<a href="#"><img src="market.png"height="50" width="45">Market place</a>
+			<a href="#"><img src="watch.png"height="50" width="45">Watch</a>
+			<a href="#">See more</a>
+		</div>
+		<div class="shortcut-links">
+			<p>Your Shortcuts</p>
+			<a href="#"><img src="img1.jpg" height="40" width="35">Web Developers</a>
+				<a href="#"><img src="img2.jpg" height="40" width="35">Web Design Course</a>
+					<a href="#"><img src="img3.jpg" height="40" width="35">Full Stack Development</a>
+						<a href="#"><img src="img4.jpg" height="40" width="35">Website Experts</a>
+					</div>
+				</div>
+	<div class="main-content"></div>
+	<div class="right-sidebar">
+		<div class="sidebar-title">
+			<h4>Events</h4>
+			<a href="#">See All</a>
+			</div>
+			<div class="event">
+				<div class="left-event">
+					<h3>18</h3>
+					<span>March</span>
+				</div>
+				<div class="right-event">
+					<h4>Social Media</h4>
+					<p>Wilson Tech Park</p>
+					<a href="#">More Info</a>
+				</div>
+			</div>
+			<div class="event">
+				<div class="left-event">
+					<h3>22</h3>
+					<span>June</span>
+			</div>
+			<div class="right-event">
+					<h4>Mobile marketting</h4>
+					<p>Wilson Tech</p>
+					<a href="#">More Info</a>
+				</div>
+		</div>
+	</div>	
+</body>
+</html>
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+	box-sizing: border-box; 
+}
+body{
+	background: #efefef;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #1876f2;
+	padding: 5px 5%;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.logo{
+	width: 160px;
+	margin-right: 45px;
+}
+.nav-left, nav-right{
+	display: flex;
+	align-items: center;
+}
+.nav-left ul li{
+	list-style: none;
+	display: inline-block;
+}
+.nav-left ul li img{
+	width: 28px;
+	margin: 0 15px;
+}
+.nav-user-icon{
+	margin-left: 30px;
+}
+.nav-user-icon img{
+	width: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.search-box{
+	background: #efefef;
+	width: 350px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+}
+.search-box img{
+	width: 18px;
+}
+.search-box input{
+	width: 100%;
+	background: transparent;
+	padding: 10px;
+    outline: none;
+    border: 0;
+}
+.online{
+	position: relative;
+}
+.online::after{
+	content: '';
+	width: 7px;
+	height: 7px;
+	border: 2px solid;
+	border-radius: 50%;
+	background: #41db51;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 5%;
+}
+.left-sidebar{
+	flex-basis: 25%;
+	position: sticky;
+	top: 70px;
+	align-self: flex-start;
+	height: 100vh;
+}
+.right-sidebar{
+	flex-basis: 25%;
+	position: sticky;
+	top: 70px;
+	align-self: flex-start;
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	color: #626262;
+}
+.main-content{
+	flex-basis: 47%;
+}
+.imp-links a, .shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+.imp-links a img{
+width: 25px;
+margin-right: 15px;
+}
+.imp-links a:last-child{
+	color: #1876f2;
+}
+.imp-links{
+	border-bottom: 1px solid #ccc;
+}
+.shortcut-links a img{
+	width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcut-links p{
+	margin: 25px 0;
+	color: #626262;
+	font-weight: 500;
+}
+.sidebar-title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+.sidebar-title h4{
+	font-weight: 600;
+	font-size: 16px;
+}
+.sidebar-title a{
+	text-decoration: none;
+	color: #1876f2;
+	font-size: 12px;
+	}
+	.event{
+		display: flex;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.event-left{
+		border-radius: 10px;
+		height: 65px;
+		width: 65px;
+		margin-right: 15px;
+        padding-top: 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+	}
+	.event p{
+		font-size: 12px;
+	}
+	.event a{
+		font-size: 12px;
+		text-decoration: none;
+		color: #1876f2;
+	}
+	.left-event span{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: #1876f2;
+		color: #fff;
+		font-size: 10px;
+		padding: 4px 0;
+	}
+
